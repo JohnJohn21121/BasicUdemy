@@ -19,5 +19,15 @@ public class Main {
 
         bobAccount.deposit(52);
         bobAccount.whitdraw(100);
+
+        VipCustomer customer1 = new VipCustomer();
+        System.out.println(customer1.getName());
+
+        VipCustomer customer2 = new VipCustomer("Manolo", 30000);
+        System.out.println(customer2.getName());
+
+        VipCustomer customer3 = new VipCustomer("Alejandro",5000, "capullo@email.com");
+        System.out.println(customer3.getName());
+        System.out.println(customer3.getEmailAddress());
     }
 }
